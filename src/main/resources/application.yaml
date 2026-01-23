@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/document-service
+    url: jdbc:postgresql://localhost:5432/document-service?createDatabaseIfNotExist=true&serverTimezone=UTC
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver

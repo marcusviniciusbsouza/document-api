@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 CREATE TABLE tbl_document (
     document_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     descricao TEXT,
