@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 CREATE TABLE TBL_USER (
     user_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     active BOOLEAN,

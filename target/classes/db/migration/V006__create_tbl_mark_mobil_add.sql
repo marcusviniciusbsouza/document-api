@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 CREATE TABLE marca_mobil_adicionada (
     mobil_id UUID NOT NULL,
     mark_id UUID NOT NULL,
