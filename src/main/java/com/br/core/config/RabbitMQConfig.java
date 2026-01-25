@@ -8,18 +8,18 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitMQConfig {
-    @Bean
-    public Jackson2JsonMessageConverter messageConverter() {
-        return new Jackson2JsonMessageConverter();
-    }
-
+//    @Bean
+//    public Jackson2JsonMessageConverter messageConverter() {
+//        return new Jackson2JsonMessageConverter();
+//    }
+//
     // a API de service-registre deve esta rodando para retornar um corpo json o bean abaixo converte para um json
-
-    @Bean
-    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory,
-                                         Jackson2JsonMessageConverter converter) {
-        RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
-        rabbitTemplate.setMessageConverter(converter);
-        return rabbitTemplate;
-    }
+//
+//    @Bean
+//    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory,
+//                                         Jackson2JsonMessageConverter converter) {
+//        RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+//        rabbitTemplate.setMessageConverter(converter);
+//        return rabbitTemplate;
+//    }
 }
